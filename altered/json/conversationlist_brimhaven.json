@@ -1,0 +1,36 @@
+[
+    {
+        "id":"brv_playing_children_10",
+        "message":"We are practicing 'Ba game'.\n\nOnce a year the west and the east parts of the town play against each other. It can be very competitive."
+    },
+    {
+        "id":"brv_playing_children",
+        "message":"Don't disturb our game. Go away!",
+        "switchToNPC":"brv_playing_child1",
+        "replies":[
+            {
+                "text":"What are you playing?",
+                "nextPhraseID":"brv_playing_children_10_selector",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":2,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Why did you move to play here?",
+                "nextPhraseID":"poisonland_bagame_selector_exit",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":2
+                    }
+                ]
+            }
+        ]
+    }
+]

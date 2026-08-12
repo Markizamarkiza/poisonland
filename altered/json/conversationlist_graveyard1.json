@@ -1,0 +1,34 @@
+[
+    {
+        "id":"throthaus_3",
+        "message":"I'm a farmer, not a shopkeeper. So yes, if you want to buy a cartload, no otherwise.",
+        "replies":[
+            {
+                "text":"OK. Thanks. I need to get going.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"How about some hay?",
+                "nextPhraseID":"poisonland_hayselector",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":55
+                    }
+                ]
+            },
+            {
+                "text":"How about a pitchfork?",
+                "nextPhraseID":"throthaus_4",
+                "requires":[
+                    {
+                        "requireType":"questLatestProgress",
+                        "requireID":"deebo_orchard_ght",
+                        "value":25
+                    }
+                ]
+            }
+        ]
+    }
+]

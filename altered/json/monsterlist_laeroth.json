@@ -1,0 +1,10 @@
+[
+    {
+        "id":"isolated_man",
+        "name":"Isolated man",
+        "iconID":"monsters_ld_edit:80",
+        "unique":1,
+        "monsterClass":"humanoid",
+        "phraseID":"poisonland_isolatedman_selector"
+    }
+]

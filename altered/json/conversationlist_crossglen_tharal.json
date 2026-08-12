@@ -1,0 +1,76 @@
+[
+    {
+        "id":"tharal1",
+        "message":"Walk in the glow of the Shadow, my child. If you've come with a sickness or a stomach ache, I'm afraid I don't have any bonemeal potions anymore. Only the regular ones.",
+        "replies":[
+            {
+                "text":"Show me what you have to trade.",
+                "nextPhraseID":"S"
+            },
+            {
+                "text":"Do you have anything else for food poisoning?",
+                "nextPhraseID":"tharal_antifoodp1"
+            },
+            {
+                "text":"What can you tell me about bonemeal?",
+                "nextPhraseID":"poisonland_tharal",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bonemeal",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"What can you tell me about bonemeal?",
+                "nextPhraseID":"tharal_bonemeal_select",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bonemeal",
+                        "value":10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"tharal_bonemeal1",
+        "message":"We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore.",
+        "replies":[
+            {
+                "text":"Please?",
+                "nextPhraseID":"tharal_bonemeal2_1"
+            }
+        ]
+    },
+    {
+        "id":"tharal_antifoodp1",
+        "message":"No, sorry. But I spoke with the potion maker in Fallhaven, and he was working on a new potion for that. With bonemeal banned and all.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tharal_antifoodp2"
+            }
+        ]
+    },
+    {
+        "id":"tharal_antifoodp2",
+        "message":"You should go see him and ask if he's finished it. He can probably help you.",
+        "replies":[
+            {
+                "text":"Thanks, I'll go see him.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"antifoodp",
+                "value":10
+            }
+        ]
+    }
+]

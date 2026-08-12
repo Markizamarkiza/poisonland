@@ -1,0 +1,172 @@
+[
+    {
+        "id":"poisonland_gargoyle",
+        "name":"Overgrown gargoyle",
+        "iconID":"monsters_johny:16",
+        "monsterClass":"construct",
+        "droplistID":"poisonland_overgrowngargoyle"
+    },
+    {
+        "id":"poisonland_firespirit",
+        "name":"Fire spirit",
+        "iconID":"monsters_tometik3:41",
+        "unique":1,
+        "monsterClass":"ghost",
+        "spawnGroup":"",
+        "horizontalFlipChance":50,
+        "phraseID":"poisonland_firespirit_selector"
+    },
+    {
+        "id":"poisonland_scientist",
+        "name":"Eckhart",
+        "iconID":"monsters_johny:19",
+        "spawnGroup":"",
+        "phraseID":"poisonland_eckhart"
+    },
+    {
+        "id":"poisonland_crackedgargoyle",
+        "name":"Cracked gargoyle",
+        "iconID":"monsters_johny:15",
+        "monsterClass":"construct",
+        "droplistID":"poisonland_crackedgargoyle"
+    },
+    {
+        "id":"poisonland_normalbeast",
+        "name":"Blighted mountain cat",
+        "iconID":"monsters_tometik4:62",
+        "monsterClass":"animal"
+    },
+    {
+        "id":"poisonland_fireperson",
+        "name":"Fire person",
+        "iconID":"monsters_tometik1:36",
+        "unique":1,
+        "monsterClass":"ghost",
+        "horizontalFlipChance":50,
+        "phraseID":"poisonland_fireperson_selector"
+    },
+    {
+        "id":"poisonland_tree",
+        "name":"Moonwalker tree",
+        "iconID":"monsters_tometik10:31",
+        "droplistID":"poisonland_tree"
+    },
+    {
+        "id":"poisonland_guardian",
+        "name":"Hunched guardian",
+        "iconID":"monsters_newb_3:2",
+        "unique":1,
+        "monsterClass":"giant",
+        "movementAggressionType":"none"
+    },
+    {
+        "id":"poisonland_chimera",
+        "name":"Blight chimera",
+        "iconID":"monsters_tometik4:39",
+        "monsterClass":"animal",
+        "horizontalFlipChance":30
+    },
+    {
+        "id":"poisonland_brimhavenguard",
+        "name":"Brimhaven guard",
+        "iconID":"monsters_ld1:41",
+        "phraseID":"poisonland_brimhavenguard"
+    },
+    {
+        "id":"poisonland_heiter",
+        "name":"Heiter",
+        "iconID":"monsters_ld_edit:80"
+    },
+    {
+        "id":"poisonland_shaman",
+        "name":"Charwood goblin shaman",
+        "iconID":"monsters_newb_1:93"
+    },
+    {
+        "id":"poisonland_hobgoblin",
+        "name":"Charwood hobgoblin bodyguard",
+        "iconID":"monsters_newb_1:91",
+        "movementAggressionType":"helpOthers",
+        "horizontalFlipChance":50
+    },
+    {
+        "id":"poisonland_goblintrainer",
+        "name":"Charwood goblin tamer",
+        "iconID":"monsters_rltiles4:22"
+    },
+    {
+        "id":"poisonland_mazarth",
+        "name":"Alpha mazarth beast",
+        "iconID":"monsters_tometik9:19",
+        "monsterClass":"animal",
+        "horizontalFlipChance":50
+    },
+    {
+        "id":"brightportstudent13",
+        "name":"Erina",
+        "iconID":"monsters_ld_edit:41",
+        "phraseID":"poisonland_erina"
+    },
+    {
+        "id":"brightportstudent14",
+        "name":"Dinan",
+        "iconID":"monsters_ld_edit:38",
+        "phraseID":"poisonland_dinan"
+    },
+    {
+        "id":"poisonland_bagame",
+        "name":"Ball",
+        "iconID":"monsters_misc:12",
+        "phraseID":"poisonland_ball"
+    },
+    {
+        "id":"poisonland_goblinking0",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_goblinking1",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_goblinking2",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_goblinking3",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_wildmazarth",
+        "name":"Wild mazarth beast",
+        "iconID":"monsters_tometik9:19",
+        "monsterClass":"animal"
+    },
+    {
+        "id":"poisonland_hortensia",
+        "name":"Hortensia",
+        "iconID":"monsters_ld_edit:3",
+        "movementAggressionType":"wholeMap",
+        "phraseID":"poisonland_hortensia_selector"
+    },
+    {
+        "id":"poisonland_freya",
+        "name":"Freya",
+        "iconID":"monsters_ld1:179",
+        "droplistID":"poisonland_extendedfreyja"
+    },
+    {
+        "id":"poisonland_tree2",
+        "name":"Walker tree",
+        "iconID":"monsters_tometik10:28",
+        "droplistID":"poisonland_tree"
+    },
+    {
+        "id":"poisonland_crystalberrygather",
+        "name":"Crystal berry",
+        "iconID":"items_newb:817"
+    }
+]

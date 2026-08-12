@@ -1,0 +1,11 @@
+[
+    {
+        "id":"tharal",
+        "name":"Tharal",
+        "iconID":"monsters_men:4",
+        "monsterClass":"humanoid",
+        "spawnGroup":"tharal",
+        "phraseID":"tharal1",
+        "droplistID":"shop_tharal"
+    }
+]
