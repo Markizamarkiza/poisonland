@@ -6857,6 +6857,213 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"poisonland_oven_achievement",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":61
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":62
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":63
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":64
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":65
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":66
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":67
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":68
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":69
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":70
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":71
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":72
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":73
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":74
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":75
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":76
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":77
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":78
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":79
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":80
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":81
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":82
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":83
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":84
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":85
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":86
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":87
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":88
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":89
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":90
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":91
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":92
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":93
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":94
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":95
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":96
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":97
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":98
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":60
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"achievements",
+                        "value":225,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"poisonland_oven7",
                 "requires":[
                     {
@@ -14857,7 +15064,7 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_baking",
-                "value":94
+                "value":99
             },
             {
                 "rewardType":"questProgress",
@@ -14911,7 +15118,7 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_baking",
-                "value":95
+                "value":100
             },
             {
                 "rewardType":"questProgress",
@@ -15042,7 +15249,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
-                        "value":94
+                        "value":99
                     }
                 ]
             },
@@ -15053,7 +15260,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
-                        "value":95
+                        "value":100
                     }
                 ]
             }
@@ -15131,6 +15338,27 @@
                 "rewardType":"spawnAll",
                 "rewardID":"brightportstudent2",
                 "mapName":"brightport_school6"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_oven_achievement",
+        "message":"You stand before the oven and a strange sense of realization hits, you've baked enough times to understand this feeling yourself. - You've made every possible combination of ingredients, recipes, and heat. there are no new discoveries to make.",
+        "replies":[
+            {
+                "text":"Yet the baking shall persist.",
+                "nextPhraseID":"poisonland_oven0"
+            },
+            {
+                "text":"Dang, I need a break.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"achievements",
+                "value":225
             }
         ]
     }
