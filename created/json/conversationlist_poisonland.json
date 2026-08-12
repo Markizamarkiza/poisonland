@@ -12667,6 +12667,7 @@
     },
     {
         "id":"poisonland_dough_ingredient2",
+        "message":"You cut the second ingredient.",
         "replies":[
             {
                 "text":"N",
@@ -12683,6 +12684,7 @@
     },
     {
         "id":"poisonland_dough_ingredient1",
+        "message":"You cut the first ingredient.",
         "replies":[
             {
                 "text":"N",
@@ -15139,6 +15141,7 @@
     },
     {
         "id":"poisonland_remove",
+        "message":"REMOVE THIS WHEN DONE WITH TESTING",
         "replies":[
             {
                 "text":"give me ingredients",
@@ -15189,6 +15192,16 @@
             {
                 "rewardType":"giveItem",
                 "rewardID":"bonemeal_potion",
+                "value":10
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"wild_berry2a",
+                "value":10
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"wild_berry1",
                 "value":10
             }
         ]

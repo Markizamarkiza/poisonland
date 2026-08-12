@@ -897,7 +897,7 @@
         "message":"Serves you right, $playername, don't misbehave.",
         "replies":[
             {
-                "text":"What if I just say sorry, pleasee.",
+                "text":"What if I just say sorry, please.",
                 "nextPhraseID":"poisonland_oswald1"
             }
         ]
@@ -1174,5 +1174,37 @@
                 "nextPhraseID":"brightport_mayor11"
             }
         ]
+    },
+    {
+        "id":"oswald_start",
+        "message":"Hey, stop running around my office! You're distracting me from my work.",
+        "replies":[
+            {
+                "text":"Excuse me sir. I wish to help Stanwick by investigating the theft. Could you tell me more about it?",
+                "nextPhraseID":"brightport_oswald",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":25
+                    }
+                ]
+            },
+            {
+                "text":"Excuse me sir. I was kicked out of the lecture room for misbehaving.",
+                "nextPhraseID":"brightport_oswald24",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":228
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"brightport_oswald23",
+        "message":"This time I'll forgive it. But maybe next time I won't, so don't do it again! (Deprecated dialog)"
     }
 ]
