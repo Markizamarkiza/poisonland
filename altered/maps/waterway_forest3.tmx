@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map SYSTEM "https://mapeditor.org/dtd/1.0/map.dtd">
-<map version="1.0" orientation="orthogonal" width="31" height="18" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="14" height="29" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="outdoors" value="1"/>
+ </properties>
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="320"/>
  </tileset>
@@ -181,162 +184,54 @@
  <tileset firstgid="7481" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7609" name="map_brightport" tilewidth="32" tileheight="32">
-  <image source="../drawable/map_brightport.png" width="512" height="224"/>
- </tileset>
- <tileset firstgid="7721" name="map_tree_3" tilewidth="32" tileheight="32">
-  <image source="../drawable/map_tree_3.png" width="1024" height="544"/>
- </tileset>
- <tileset firstgid="8265" name="map_tree_1" tilewidth="32" tileheight="32">
-  <image source="../drawable/map_tree_1.png" width="512" height="256"/>
- </tileset>
- <layer name="Base" width="31" height="18">
+ <layer name="Ground" width="14" height="29">
   <data encoding="base64" compression="zlib">
-   eJxjYKAtuMhJYwtGwYgHqnKj9g53MBL9PApGDhgtS0gDAAHyAm0=
+   eJy7yMnAcHEUj+JRPIpH8SimEgYAjD9ZzA==
   </data>
  </layer>
- <layer name="Ground" width="31" height="18">
+ <layer name="Objects" width="14" height="29">
   <data encoding="base64" compression="zlib">
-   eJy91EsOgjAQBuAxsuneaFeNC0HvoJzBS3gVr+J9DKw8jW3gD6PRYQqliwkJCz7m2RqidsG474me5ncs6f4zl7ZLR3T0cXBx9mM9xFTz5ONSEFWCP2bH+CUz66J7d/bPrdL+dmP+wbrBfO26/wj2RmFLrtbm+ddCzilteNy9CjnH1lzyUW/LXCln7axpbfS4MZ2byw7fuq0+Y+ptie13yNv2OTf9buW4a5gvbo/VO4XN59pG9HquzV3UPdhVBhv7FOYbNxy9lvY6lY29wg3X9nqOjXqj5pixRmEi3nlto98=
+   eJyNVVtKA0EQXAgaCcnAzF/mJHoDhdzAq3hZFcz4E/wSEqK47W6RmpoesSDMY/tZ3T35jMMv1nkYNnlaQ67P3v1he9kDkDG8jXafrqb993aSO8/rgnRYt2drTX4/YqsLwA9kzZ/hOrUyvfMpTvqeXf5uZ7sPJAt/pSNjnMEW1uL487jnVf0xDs6dwuysUm2vxDrXm1TH0vOn/Bi0RsiP73scou6wyft9bHW9Wh5j3T+G5/Hbi9Oz0DHeuF+DY/+v2L2Y1Bf7w8qzZVimtoZaf6vDkerFeRbhCNhTn+lMM1ZpaHAWH68Oj5of/Gg9VVa/WY+gzzQ3jwutQW9WvBj5XXpMl/obitPDzBnev69/zARmSd9BfidU513mcZfad0Jz0V68HX93c6wh13wz7zwDhvtx/zDH6f0fhOz3DnP1AzoedMk=
   </data>
  </layer>
- <layer name="Objects" width="31" height="18">
+ <layer name="Above" width="14" height="29">
   <data encoding="base64" compression="zlib">
-   eJyNVUtOAkEQbQlBGdRkXDSfhXABvYcudA0eAZdeQIPRq+iBIBJ3JAwTWDOIG+uFrnRNTc/El1Sa6d+relVd7GNjxgOTwy7Ofz/3jHnp+e+bmjG3ZGu3bx/nzw7pvhHZZHD4DSRq/lVxSuC+N1p/J8uUL0PiHdX899KGzzHHyUX+/DI+rAG8d0tzjTbtFdZsl/v34M7PrI+JMXfnVs7vMen22MvPSX+BhO7Zk3Xo7C+NkeBnLrkfmsxE3OBsdYw57RR95RhTF/d5368h5hbZyt1lBX+VBqn1vJLzrn4Yq/KbxZ4XMXcFB/hZA/ZJ1x7rsGl7zvt63o8kLvrBNc5ad0tiSwT3XtSsrDNwg1PHz4hUze1EnqMKXcvWZ0pvybuwRb1Tx9cQfthAbUlYpbvmZr15XLh5vC/9BnSdV93PkLpzrlLBzTnG+F2i35z2T50BZ31f72Xa6jcg8WV9vBJTW7S1Op+J3qjfFVvoDQDb2MfNsf/Q3NNRfp+uM/Q23bsBflfawKtzB3B9gRv3NS59jaG2QvmtQsinbaAXyrpm3ZHrRNUz93TpO/cI+f/zX0heaA3uJnFEgbet39pkUNzDCPUugHsywHGCV/ZwaA6UxYI8bP6Rh6xCD/muGDJXx05nme9lgFP//5et8xrrzbzcw2WdAVfEf032QRp+Ch2x5w/93q5T
+   eJydVVsKwzAM6x32lfvs/tD1PydZoSnDoAopdiYIbRLFVv1Ie9u27xjnGAie87rbx73362cboXwxkOO4bIf9uDNqPtOkOL09bWVng4O2MvQCB/2wBhWfStxX4WIY83jiu/KXaQvsg/dpPpccN+XXaVf1qr5NaT+FJtaS5d9prNZXBcg7Jj3m7oRZra3UT3Yv/NNfK35Vvdz5V3xle9ZvroaqutjOAVoxB6qe7vXVu6MC939gPbF+Ae/8huQ=
   </data>
  </layer>
- <layer name="Above" width="31" height="18">
+ <layer name="Walkable" width="14" height="29">
   <data encoding="base64" compression="zlib">
-   eJxjYMANyhUYGCoU8CggoK8EiEuBOAqLGSUKlNnhjaTHE8j2QuLD7IWBaCkGhhgp0u3AZhch0AJU24qmHtmPILe9kyNszhYS7MQG0MMAF8jGouYImlghMOyK8ITfZzHK3YEPoMcvsr2fkOxmIyJcQYDSsAUBZHtB7iDWn+hhSw74LoiwF+ZnXGFETQCLZ2R7CYG3csSld0LgsRgqPdQBchrEF3eFjBA/FzNSJy+BALFpEGQvCP8Sx60G2e3IZQQl6RGWr3HFNXo4lChgVwcCuMoubPUOcnmCbDc18hY+M2D2wvI1PdP4J6Q8DeNjS2czgWE4Cykc0cMcOZ+TUqd/RopndHtB9S5MDJ0GABd7ULs=
-  </data>
- </layer>
- <layer name="Top" width="31" height="18">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFwwl8Fhs4uz8NoN2jgL7gl/hAu2BkAFB+LmYcaFeMglGACbwVBs5uAGhbBQs=
-  </data>
- </layer>
- <layer name="Walkable" width="31" height="18" visible="0">
-  <data encoding="base64" compression="zlib">
-   eJzNVFsOgDAI4xTe/0reyPhhQgylXUXj/jYeLQUWEbFv0Z7Tnn2uO4rL9uxXvamY7B1hIx8lV4eB+LC7whthOTkq/VGM2hslfrVmFOvMGard4c3mcFKvKc3ewnd65PCf0rv7t9z+PTkT/Z7icc+vcP1CpxVMtN8OV7VeZVYZD3UuWS3uHlS2P+wCqr3S6wDsBbrK
+   eJzFk8ENwDAIAzNF918pG/VVqYoMPtNHkXgkwsBBsq+19kd/TJ3f90rTaYlO5ZjUOWOS3pROxVT9VfXIvBWfs7Mfwtrldrvp6tC90/lXbImGvqFOS7nJXpM/qLhcHmfTui4+3a9joGwJz1RDeSfvheb802/VLN7i
   </data>
  </layer>
  <objectgroup name="Mapevents">
-  <object name="north" type="mapchange" x="64" y="0" width="576" height="32">
+  <object name="west" type="mapchange" x="0" y="128" width="32" height="224">
    <properties>
-    <property name="map" value="korhald_cave_outdoor1"/>
-    <property name="place" value="south"/>
-   </properties>
-  </object>
-  <object name="east" type="mapchange" x="960" y="64" width="32" height="480">
-   <properties>
-    <property name="map" value="waytobrightport22"/>
-    <property name="place" value="west"/>
-   </properties>
-  </object>
-  <object name="poisoned_ground" type="script" x="32" y="32" width="576" height="512">
-   <properties>
-    <property name="when" value="step"/>
-   </properties>
-  </object>
-  <object name="poisoned_ground" type="script" x="608" y="32" width="96" height="224">
-   <properties>
-    <property name="when" value="step"/>
-   </properties>
-  </object>
-  <object name="south" type="mapchange" x="736" y="544" width="32" height="32">
-   <properties>
-    <property name="map" value="brightportwild23"/>
-    <property name="place" value="north"/>
-   </properties>
-  </object>
-  <object name="south1" type="mapchange" x="256" y="544" width="224" height="32">
-   <properties>
-    <property name="map" value="brightportwild23"/>
-    <property name="place" value="north1"/>
-   </properties>
-  </object>
-  <object name="south2" type="mapchange" x="160" y="544" width="32" height="32">
-   <properties>
-    <property name="map" value="brightportwild23"/>
-    <property name="place" value="north2"/>
-   </properties>
-  </object>
-  <object name="south3" type="mapchange" x="32" y="544" width="64" height="32">
-   <properties>
-    <property name="map" value="brightportwild23"/>
-    <property name="place" value="north3"/>
-   </properties>
-  </object>
-  <object name="west" type="mapchange" x="0" y="32" width="32" height="512">
-   <properties>
-    <property name="map" value="poisonland1"/>
+    <property name="map" value="waterway_forest1"/>
     <property name="place" value="east"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <properties>
-   <property name="active" value="false"/>
-  </properties>
-  <object name="amoeba1" type="spawn" x="160" y="128" width="192" height="256">
+  <object name="irdegh_spawn_1" type="spawn" x="64" y="32" width="352" height="384">
    <properties>
-    <property name="quantity" value="3"/>
-    <property name="spawngroup" value="brightport_amoeba"/>
+    <property name="quantity" value="8"/>
+    <property name="spawngroup" value="irdegh_spawn"/>
    </properties>
   </object>
-  <object name="tree4" type="spawn" x="544" y="320" width="96" height="64">
+  <object name="erumen_1_spawn" type="spawn" x="128" y="384" width="288" height="320">
    <properties>
-    <property name="spawngroup" value="brightport_tree"/>
+    <property name="quantity" value="6"/>
+    <property name="spawngroup" value="erumen_1"/>
    </properties>
   </object>
-  <object name="fawn2" type="spawn" x="768" y="192" width="160" height="256">
+  <object name="irdegh_spawn_2" type="spawn" x="64" y="640" width="256" height="192">
    <properties>
-    <property name="spawngroup" value="erumen_2"/>
-   </properties>
-  </object>
-  <object name="fawn" type="spawn" x="768" y="448" width="160" height="96">
-   <properties>
-    <property name="spawngroup" value="brightport_sickfawn"/>
-   </properties>
-  </object>
-  <object name="squirmer" type="spawn" x="736" y="32" width="256" height="128">
-   <properties>
-    <property name="spawngroup" value="brightport_squirrel"/>
-   </properties>
-  </object>
-  <object name="fawn1" type="spawn" x="736" y="544" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightport_sickfawn"/>
-   </properties>
-  </object>
-  <object name="poisonland_tree2" type="spawn" x="448" y="64" width="160" height="96">
-   <properties>
+    <property name="quantity" value="4"/>
     <property name="spawngroup" value="poisonland_tree2"/>
    </properties>
   </object>
-  <object name="tree5" type="spawn" x="416" y="128" width="160" height="224">
-   <properties>
-    <property name="spawngroup" value="brightport_tree"/>
-   </properties>
-  </object>
-  <object name="tree3" type="spawn" x="32" y="416" width="448" height="96">
-   <properties>
-    <property name="quantity" value="2"/>
-    <property name="spawngroup" value="brightport_tree"/>
-   </properties>
-  </object>
-  <object name="tree2" type="spawn" x="64" y="96" width="96" height="288">
-   <properties>
-    <property name="quantity" value="2"/>
-    <property name="spawngroup" value="brightport_tree"/>
-   </properties>
-  </object>
-  <object name="tree1" type="spawn" x="128" y="32" width="256" height="96">
-   <properties>
-    <property name="spawngroup" value="brightport_tree"/>
-   </properties>
-  </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
+ <objectgroup name="Keys"/>
  <objectgroup name="Replace"/>
 </map>

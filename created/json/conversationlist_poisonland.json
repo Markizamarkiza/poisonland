@@ -7138,22 +7138,6 @@
             },
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_cooking",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"poisonland_baking",
-                        "value":10
-                    },
-                    {
-                        "requireType":"factionScore",
-                        "requireID":"poisonland_fuel",
-                        "value":1
-                    }
-                ]
-            },
-            {
-                "text":"N",
                 "nextPhraseID":"poisonland_embers2",
                 "requires":[
                     {
@@ -7187,6 +7171,22 @@
                         "requireID":"poisonland_fuel",
                         "value":6,
                         "negate":false
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_cooking",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":10
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":1
                     }
                 ]
             },
@@ -7231,6 +7231,11 @@
                         "requireID":"poisonland_baking",
                         "value":13,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":60
                     }
                 ]
             }
@@ -7408,6 +7413,24 @@
                 ]
             },
             {
+                "text":"I don't have any firewood left.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_firewood",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":6,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "text":"I've added enough to the fire, time to let it smolder.",
                 "nextPhraseID":"X",
                 "requires":[
@@ -7505,6 +7528,24 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
                         "value":32
+                    }
+                ]
+            },
+            {
+                "text":"I don't have any firewood left.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_firewood",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":6,
+                        "negate":true
                     }
                 ]
             }
@@ -8128,7 +8169,7 @@
                 "nextPhraseID":"poisonland_flour"
             },
             {
-                "text":"Not as if I'll be baking that much anyway.",
+                "text":"Not as if I'll be baking anyway.",
                 "nextPhraseID":"poisonland_flour"
             }
         ],
@@ -10965,6 +11006,11 @@
             {
                 "rewardType":"removeQuestProgress",
                 "rewardID":"poisonland_baking",
+                "value":12
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
                 "value":10
             },
             {
@@ -11066,6 +11112,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":33
+            },
             {
                 "rewardType":"giveItem",
                 "rewardID":"small_tree_branch",
@@ -11314,11 +11365,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_bakeryquest",
                 "value":60
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"poisonland_baking",
-                "value":33
             }
         ]
     },
@@ -11734,7 +11780,7 @@
                         "requireType":"inventoryKeep",
                         "requireID":"poisonland_milk",
                         "value":2,
-                        "negate":true
+                        "negate":false
                     }
                 ]
             },
@@ -12195,6 +12241,7 @@
     {
         "id":"poisonland_dough12",
         "message":"The dough is cut into three long strips, ready for the ingredients to be added.",
+        "switchToNPC":"none",
         "replies":[
             {
                 "text":"[Cut the 2 apples Ysolde gave you.]",
@@ -12255,11 +12302,6 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
                         "value":38
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"poisonland_baking",
-                        "value":47
                     },
                     {
                         "requireType":"questProgress",
@@ -12837,11 +12879,6 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
-                        "value":47
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"poisonland_baking",
                         "value":7,
                         "negate":true
                     }
@@ -13079,12 +13116,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
-                        "value":38
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"poisonland_baking",
-                        "value":47
+                        "value":39
                     },
                     {
                         "requireType":"questProgress",
@@ -14481,6 +14513,7 @@
     {
         "id":"poisonland_ysolde_tutorial8",
         "message":"*Cough*  How could you mess up this bad... *Cough* $playername.",
+        "switchToNPC":"brightportstudent2",
         "replies":[
             {
                 "text":"Sorry, it won't happen again.",
@@ -14502,6 +14535,7 @@
     {
         "id":"poisonland_ysolde_tutorial9",
         "message":"Why did you go ahead and remove them, $playername? They weren't ready. You can't put them back in now.",
+        "switchToNPC":"brightportstudent2",
         "replies":[
             {
                 "text":"Oh, sorry.",
@@ -14523,6 +14557,7 @@
     {
         "id":"poisonland_ysolde_tutorial10",
         "message":"That looks great, $playername. Let's give them a taste! - Ah, the taste leaves a lot to be desired, but it's very good for a beginner.",
+        "switchToNPC":"brightportstudent2",
         "replies":[
             {
                 "text":"A little sourness doesn't ruin the taste.",
@@ -14540,6 +14575,7 @@
     {
         "id":"poisonland_ysolde_tutorial11",
         "message":"That looks great, $playername. The rolls are perfectly baked. - The heat brought out the flavor perfectly!",
+        "switchToNPC":"brightportstudent2",
         "replies":[
             {
                 "text":"Indeed. it tastes sweet.",
@@ -14661,6 +14697,7 @@
     {
         "id":"poisonland_hortensia4",
         "message":"What is it? Can't you see I am talking with Ysolde? She has a lot of explaining to do.",
+        "switchToNPC":"poisonland_hortensia",
         "replies":[
             {
                 "text":"There is a good reason for why we're here. We just needed to bake one pastry and leave.",
@@ -14880,7 +14917,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_bakeryquest",
-                        "value":110
+                        "value":106
                     }
                 ]
             },
@@ -14891,7 +14928,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_bakeryquest",
-                        "value":110,
+                        "value":106,
                         "negate":true
                     }
                 ]
@@ -15320,6 +15357,7 @@
     {
         "id":"poisonland_oven_pie",
         "message":"To prepare a pie, you'll need to lay the dough like so. Then add the ingredients. Unlike rolls and tarts, pies need three ingredients. And that's about it. Experiment more by yourself, $playername. I'll return to my room now.",
+        "switchToNPC":"brightportstudent2",
         "replies":[
             {
                 "text":"N",
@@ -15363,7 +15401,7 @@
                 "nextPhraseID":"poisonland_oven0"
             },
             {
-                "text":"Dang, I need a break.",
+                "text":"Dang, I need a breath of fresh air. This revelation is too much.",
                 "nextPhraseID":"X"
             }
         ],

@@ -186,8 +186,8 @@
                 "itemID":"poisonland_firewood",
                 "chance":"100",
                 "quantity":{
-                    "min":5,
-                    "max":5
+                    "min":10,
+                    "max":10
                 }
             }
         ]

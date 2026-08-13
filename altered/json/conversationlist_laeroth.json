@@ -8,7 +8,7 @@
                 "requires":[
                     {
                         "requireType":"wear",
-                        "requireID":"brightport_cloak",
+                        "requireID":"poisonland_cloak",
                         "value":1,
                         "negate":true
                     }

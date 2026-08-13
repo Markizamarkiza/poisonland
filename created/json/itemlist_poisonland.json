@@ -1137,5 +1137,25 @@
         "displaytype":"quest",
         "category":"other",
         "description":"Apple given to me by Ysolde as an ingredient for my own pastry."
+    },
+    {
+        "id":"poisonland_cloak",
+        "iconID":"items_tometik2:7",
+        "name":"Protective cloak",
+        "displaytype":"ordinary",
+        "hasManualPrice":1,
+        "baseMarketCost":4637,
+        "category":"bdy_clth",
+        "description":"A cloak made from enchanted silk. Protects against acids and other poisons.",
+        "hitEffect":{
+            "conditionsSource":[
+                {
+                    "condition":"slime",
+                    "magnitude":-99,
+                    "duration":999,
+                    "chance":"100"
+                }
+            ]
+        }
     }
 ]
