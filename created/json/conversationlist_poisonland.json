@@ -5564,7 +5564,7 @@
                 "requires":[
                     {
                         "requireType":"random",
-                        "requireID":"10"
+                        "requireID":"30"
                     }
                 ]
             },
@@ -5574,7 +5574,7 @@
                 "requires":[
                     {
                         "requireType":"random",
-                        "requireID":"15"
+                        "requireID":"30"
                     }
                 ]
             },
