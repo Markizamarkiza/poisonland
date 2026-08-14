@@ -492,17 +492,6 @@
         "message":"Have you checked if the rumble locked us in, or is the passage still open?",
         "replies":[
             {
-                "text":"It is a long story, but in short the way out is now open. [Tell Eckhart about the monster and the fire spirits.]",
-                "nextPhraseID":"poisonland_eckhart12",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"poisonland",
-                        "value":97
-                    }
-                ]
-            },
-            {
                 "text":"No luck, the path is blocked by lava.",
                 "nextPhraseID":"poisonland_eckhart9",
                 "requires":[
@@ -698,16 +687,6 @@
         ]
     },
     {
-        "id":"poisonland_eckhart12",
-        "message":"I'm amazed you could figure everything out on your own!",
-        "replies":[
-            {
-                "text":"N",
-                "nextPhraseID":"poisonland_eckhart20"
-            }
-        ]
-    },
-    {
         "id":"poisonland_eckhart13",
         "message":"Have you had any success finding us an exit?",
         "replies":[
@@ -849,6 +828,47 @@
                 ]
             },
             {
+                "text":"You said I need gems, but I might not have any suitable ones.",
+                "nextPhraseID":"poisonland_eckhart12",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":59
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"gem1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"gem2",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"gem3",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"gem4",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"gem5",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "text":"After enough gems, one of the human-shaped fire spirits spoke to me. They found the offerings fitting and said their arrangement here is over, and they will stop the lava.",
                 "nextPhraseID":"poisonland_eckhart20",
                 "requires":[
@@ -899,6 +919,13 @@
             {
                 "text":"That's informative, thanks.",
                 "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":59
             }
         ]
     },
@@ -1155,12 +1182,24 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"poisonland_altar3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":59,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"poisonland_altar1",
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"poisonland",
-                        "value":95
+                        "requireID":"poisonland_nondisplay",
+                        "value":59
                     },
                     {
                         "requireType":"questProgress",
@@ -1174,7 +1213,7 @@
     },
     {
         "id":"poisonland_altar1",
-        "message":"The fire spirits originated from this altar. Perhaps the word \u201Cgem\u201D it said has something to do with it.",
+        "message":"\"This altar stands here. Perhaps the word 'gem' it mentioned has something to do with it.",
         "replies":[
             {
                 "text":"[Place a glass gem.]",
@@ -3353,7 +3392,7 @@
     },
     {
         "id":"poisonland_lecturestart",
-        "message":"Everyone quiet! I will now begin the lecture.",
+        "message":"Everyone quiet! I will now begin the history lecture.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -4836,7 +4875,7 @@
     },
     {
         "id":"poisonland_rubiano2",
-        "message":"I'll cut to the chase, the situation is dire. A while ago, the outskirts of the area to the north began to twist and decay. I sent an adventuring party to investigate what was happening in the depths of the cursed land. Everyone thinks there it's just superstition, but there had to be a cause. They returned extremely ill. It took them weeks to recover since we had no bonemeal left on hand.",
+        "message":"I'll cut to the point, the situation is dire. A while ago, the outskirts of the area to the north began to twist and decay. I sent an adventuring party to investigate what was happening in the depths of the cursed land. They returned extremely ill. It took them weeks to recover since we had no bonemeal left on hand.",
         "replies":[
             {
                 "text":"N",
@@ -5053,11 +5092,11 @@
     },
     {
         "id":"poisonland_rubiano0",
-        "message":"You did what I asked of you, $playername. There is no reason to keep equipment away from an adventurer as useful as you are. You have my permission.",
+        "message":"You have my permission. There is no reason to keep equipment away from an adventurer as useful as you. And this here is something from me. [Rubiano hands you a bag.]",
         "replies":[
             {
-                "text":"Thanks, I'll be on my way.",
-                "nextPhraseID":"X"
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano13"
             }
         ],
         "rewards":[
@@ -5065,6 +5104,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland",
                 "value":115
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate",
+                "value":7
             }
         ]
     },
@@ -6253,7 +6297,19 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_agnese1",
+                "nextPhraseID":"poisonland_agnese3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":110,
+                        "negate":false
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_agnese2",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -6278,7 +6334,7 @@
     },
     {
         "id":"poisonland_agnese1",
-        "message":"Ysolde has a habit of getting carried away. She gets so focused that she forgets everything else around her. Being her friend means helping her slow down sometimes. Now she's got you helping too.",
+        "message":"Ysolde has a habit of getting carried away. She gets so focused that she forgets everything else around her. Being her friend means having to help her slow down sometimes, now she's roped you in too.",
         "replies":[
             {
                 "text":"Maybe, I'll keep that in mind.",
@@ -7701,14 +7757,14 @@
         ],
         "rewards":[
             {
-                "rewardType":"questProgress",
-                "rewardID":"poisonland_baking",
-                "value":15
-            },
-            {
                 "rewardType":"removeQuestProgress",
                 "rewardID":"poisonland_baking",
                 "value":14
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":15
             },
             {
                 "rewardType":"alignmentSet",
@@ -11582,7 +11638,7 @@
     },
     {
         "id":"poisonland_rubiano11",
-        "message":"We suffered many losses among the people of Brightport. After the war ended, not only was he executed, but it took time for the garrison of Feygard to settle in. While we were weakened, the accursed lizardmen emerged from the caverns and claimed the lake as their home. Our grand water temple on Lake Bright was ransacked. Perhaps the Shadow cursed us for that reason.",
+        "message":"We suffered many losses among the people of Brightport. After the war ended, not only was he executed, but it took time for the garrison of Feygard to settle in. While we were weakened, the accursed lizardmen emerged from the caverns and claimed the lake as their home. Our grand Water Temple on Lake Bright was ransacked. Perhaps the Shadow cursed us for that reason.",
         "replies":[
             {
                 "text":"Why would the Shadow curse you?",
@@ -15028,11 +15084,23 @@
     },
     {
         "id":"poisonland_ysolde37",
-        "message":"I can teach tart"
+        "message":"I've already taught you how to make a pie. I can teach you the recipe for tarts now.",
+        "replies":[
+            {
+                "text":"Sure.",
+                "nextPhraseID":"poisonland_ysolde41_selector"
+            }
+        ]
     },
     {
         "id":"poisonland_ysolde38",
-        "message":"I can teach pie"
+        "message":"I've already taught you how to make a tart. I can teach you the recipe for pies now.",
+        "replies":[
+            {
+                "text":"Sure.",
+                "nextPhraseID":"poisonland_ysolde43_selector"
+            }
+        ]
     },
     {
         "id":"poisonland_ysolde39",
@@ -15318,7 +15386,7 @@
     },
     {
         "id":"poisonland_oven_tart",
-        "message":"To prepare a tart, you'll need to lay the dough like so. Then add the ingredients. Tarts, like rolls, don't need more than two... And that's about it. Experiment more by yourself, $playername. I'll return to my room now.",
+        "message":"To prepare a tart, you'll need to lay the dough like so. Then add the filling. Tarts, like rolls, don't need more than two ingredients... And that's about it. Experiment more by yourself, $playername. I'll return to my room now.",
         "switchToNPC":"brightportstudent2",
         "replies":[
             {
@@ -15327,6 +15395,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":44
+            },
             {
                 "rewardType":"removeQuestProgress",
                 "rewardID":"poisonland_nondisplay",
@@ -15356,7 +15429,7 @@
     },
     {
         "id":"poisonland_oven_pie",
-        "message":"To prepare a pie, you'll need to lay the dough like so. Then add the ingredients. Unlike rolls and tarts, pies need three ingredients. And that's about it. Experiment more by yourself, $playername. I'll return to my room now.",
+        "message":"To prepare a pie, you'll need to lay the dough like so. Then add the filling. Unlike rolls and tarts, pies need three ingredients... And that's about it. Experiment more by yourself, $playername. I'll return to my room now.",
         "switchToNPC":"brightportstudent2",
         "replies":[
             {
@@ -15365,6 +15438,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":44
+            },
             {
                 "rewardType":"removeQuestProgress",
                 "rewardID":"poisonland_nondisplay",
@@ -15410,6 +15488,251 @@
                 "rewardType":"questProgress",
                 "rewardID":"achievements",
                 "value":225
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano13",
+        "message":"It's called 'chocolate,' an exotic ingredient procured by a merchant in Nor City from some distant islands. It used to be quite popular in Brightport before trade across the sea stopped and the merchant went out of business. Sell it, and that will be my payment.",
+        "replies":[
+            {
+                "text":"Hmm, I could bake something with this...",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":258
+                    }
+                ]
+            },
+            {
+                "text":"Thanks, I'll be on my way.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_altar3",
+        "message":"You examine what looks to be an altar.",
+        "replies":[
+            {
+                "text":"Doesn't seem helpful.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eckhart12",
+        "message":"Then we're in trouble indeed. I have a few, but if those aren't enough, you'll have to break apart some stone gargoyles and take the gems inside them.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":60
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"gem2",
+                "value":4,
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":60,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"gem3",
+                "value":3,
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":60,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese2",
+        "message":"Ysolde's back at it again...",
+        "replies":[
+            {
+                "text":"What do you mean by that?",
+                "nextPhraseID":"poisonland_agnese1"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese3",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_agnese4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":100
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_agnese6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":95
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_agnese8",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":96
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_agnese9",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":90
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese4",
+        "message":"I appreciate you helping Ysolde. She wouldn't stop talking about the talent she discovered by teaching you.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_agnese5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":58,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese5",
+        "message":"it was a fluke! The embers do not choose who to bless.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"I didn't know that counts as talent.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese6",
+        "message":"I appreciate you helping Ysolde. I heard you baked quite a nice pastry yourself.",
+        "replies":[
+            {
+                "text":"Want a taste?",
+                "nextPhraseID":"poisonland_agnese7",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":61,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_midbake1",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"I'm not giving you another one, lady.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":61,
+                        "negate":false
+                    }
+                ]
+            },
+            {
+                "text":"I'm not sharing.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":61,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese7",
+        "message":"Aww, thank you. That's so nice of you!",
+        "replies":[
+            {
+                "text":"Your smile makes it worth it.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"It's just some bread...",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese8",
+        "message":"I appreciate you helping Ysolde. Though you could use some help with baking yourself. *Giggle*",
+        "replies":[
+            {
+                "text":"I can always try again.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"That's in the past. A bit rude to laugh, don't you think.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese9",
+        "message":"I appreciate you helping Ysolde. She told me about your spectacular failure. I couldn't stop laughing. ",
+        "replies":[
+            {
+                "text":"There is a first time for everyone. No shame in failing.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"I didn't want to bake eitherway.",
+                "nextPhraseID":"X"
             }
         ]
     }

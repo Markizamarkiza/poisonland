@@ -51,6 +51,8 @@
         "iconID":"items_misc_6:34",
         "name":"Chocolate",
         "displaytype":"rare",
+        "hasManualPrice":1,
+        "baseMarketCost":232,
         "category":"food",
         "description":"An exotic ingredient from the east, can be eaten raw.",
         "useEffect":{

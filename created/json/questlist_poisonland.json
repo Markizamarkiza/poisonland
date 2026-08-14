@@ -366,6 +366,19 @@
             {
                 "progress":58,
                 "logText":"Ysolde tutorial active"
+            },
+            {
+                "progress":59,
+                "logText":"Eckhart tells about gems"
+            },
+            {
+                "progress":60,
+                "logText":"Gems given by eckhart"
+            },
+            {
+                "progress":61,
+                "logText":"offered roll to agnese",
+                "rewardExperience":5000
             }
         ]
     },

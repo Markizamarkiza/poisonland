@@ -32,7 +32,7 @@
                     {
                         "requireType":"timerElapsed",
                         "requireID":"brightport_class",
-                        "value":3
+                        "value":2
                     },
                     {
                         "requireType":"questProgress",
@@ -55,7 +55,7 @@
                     {
                         "requireType":"timerElapsed",
                         "requireID":"brightport_class",
-                        "value":3
+                        "value":2
                     },
                     {
                         "requireType":"questProgress",
@@ -1206,5 +1206,21 @@
     {
         "id":"brightport_oswald23",
         "message":"This time I'll forgive it. But maybe next time I won't, so don't do it again! (Deprecated dialog)"
+    },
+    {
+        "id":"brightport_lecture_warning1",
+        "message":"This is the second time you have disturbed the start of my lecture. One more time and I will be sending you to the headmaster!",
+        "switchToNPC":"brightportnpc5",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":227
+            },
+            {
+                "rewardType":"createTimer",
+                "rewardID":"brightport_class"
+            }
+        ]
     }
 ]
