@@ -252,7 +252,7 @@
     },
     {
         "id":"poisonland_eckhart2",
-        "message":"I applied a special reagent at the entrance that kept the monsters away, but I used it all up. Good thing the Doughe sent you. I was about to run out of supplies too.",
+        "message":"It's not a safe spot. I applied a special reagent at the entrance that kept the monsters away, but I used it all up. I'm glad the Doughe sent you. I was about to run out of supplies.",
         "replies":[
             {
                 "text":"How come you didn\u2019t just leave and stayed stuck here for so long?",
@@ -269,7 +269,7 @@
     },
     {
         "id":"poisonland_eckhart3",
-        "message":"I was about to ask you, $playername, how come you managed to enter this accursed cavern in the first place...",
+        "message":"I was about to ask you, $playername, how come you managed to enter this accursed cave in the first place...",
         "replies":[
             {
                 "text":"N",
@@ -279,7 +279,7 @@
     },
     {
         "id":"poisonland_eckhart4",
-        "message":"You and Eckhart look at each other dumbfounded. A moment later, you begin to hear a loud rumble from the direction you entered this cave from, along with vibrations throughout the entire cavern.",
+        "message":"You and Eckhart look at each other dumbfounded. A moment later, you begin to hear a loud rumble from the direction you entered this cave from, along with vibrations throughout the entire cave.",
         "switchToNPC":"none",
         "replies":[
             {
@@ -743,6 +743,12 @@
                         "requireType":"killedMonster",
                         "requireID":"poisonland_guardian",
                         "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":90,
+                        "negate":true
                     }
                 ]
             }
@@ -922,6 +928,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":96
+            },
             {
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_nondisplay",
@@ -1213,7 +1224,7 @@
     },
     {
         "id":"poisonland_altar1",
-        "message":"\"This altar stands here. Perhaps the word 'gem' it mentioned has something to do with it.",
+        "message":"This altar stands here. Perhaps the word 'gem' it mentioned has something to do with it.",
         "replies":[
             {
                 "text":"[Place a glass gem.]",
@@ -1314,6 +1325,22 @@
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"gem_fire",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":13
+                    }
+                ]
+            },
+            {
+                "text":"[Place an Oegyth crystal.]",
+                "nextPhraseID":"poisonland_altar_oegyth",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"oegyth",
                         "value":1
                     },
                     {
@@ -2022,9 +2049,20 @@
     },
     {
         "id":"poisonland_altar_fireperson2",
-        "message":"Enough... Your offerings were sufficient.",
+        "message":"Enough. Your offerings were sufficient.",
         "switchToNPC":"poisonland_fireperson",
         "replies":[
+            {
+                "text":"Huh?",
+                "nextPhraseID":"poisonland_altar_fireperson3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":14
+                    }
+                ]
+            },
             {
                 "text":"What are you.",
                 "nextPhraseID":"poisonland_altar_fireperson3",
@@ -2034,6 +2072,17 @@
                         "requireID":"poisonland_nondisplay",
                         "value":14,
                         "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Huh?",
+                "nextPhraseID":"poisonland_altar_fireperson_gemofwarmth",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":14
                     }
                 ]
             },
@@ -2071,6 +2120,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":14
+            },
             {
                 "rewardType":"alignmentChange",
                 "rewardID":"poisonland_gem",
@@ -2121,6 +2175,16 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland",
                 "value":97
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":5
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":4
             },
             {
                 "rewardType":"removeSpawnArea",
@@ -3000,7 +3064,7 @@
     },
     {
         "id":"poisonland_heiter0",
-        "message":"West of this cabin, built on land I received for my service, was the battleground. I didn't witness the battle firsthand. My brother did, and he lost his life there. I only heard about it from those who were present.",
+        "message":"West of this cabin, built on land I received for my service in the war, was the battleground. I didn't witness the battle firsthand. My brother did, and he lost his life there. I only heard about it from those who were present.",
         "replies":[
             {
                 "text":"N",
@@ -3027,7 +3091,7 @@
     },
     {
         "id":"poisonland_heiter12",
-        "message":"Heiter puts the empty bottle of Charwood sap back on the table. Before you noticed, he has already drunk the whole bottle.",
+        "message":"Heiter puts the bottle of Charwood sap back on the table. Before you noticed, he has already drunk the whole bottle.",
         "switchToNPC":"none",
         "replies":[
             {
@@ -3072,6 +3136,7 @@
     {
         "id":"poisonland_heiter_greeting",
         "message":"Good to see you in good health once again, $playername.",
+        "switchToNPC":"poisonland_heiter",
         "replies":[
             {
                 "text":"Can you tell me your story again?",
@@ -4199,7 +4264,7 @@
     },
     {
         "id":"poisonland_lecture17",
-        "message":"The frontlines quickly stabilized before the Easterners could inflict too many casualties. But their plan had not been fully realized. It is in the following words that I explain it and I truly warn you all of the things you are about to hear.",
+        "message":"The two sides clashed and the frontlines quickly stabilized before the Easterners could inflict too many casualties. But their plan had not been fully realized. It is in the following words that I explain it and I truly warn you all of the things you are about to hear.",
         "replies":[
             {
                 "text":"N",
@@ -4209,7 +4274,7 @@
     },
     {
         "id":"poisonland_lecture18",
-        "message":"The Easterners summoned a horde of monsters to attack the Feygardians when they were barely recovering from the dirty tricks they had suffered. It was a slaughter, not a battle. And to this day, none of the cultists responsible were held accountable for this crime! As unbelievable as it sounds, this is our history.",
+        "message":"The Easterners summoned a horde of monsters to attack the Feygardians after they had barely recovered from that dirty ambush. It was a slaughter, not a battle. And to this day, none of the cultists responsible were held accountable for this crime! As unbelievable as it sounds, this is our history.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -5171,7 +5236,7 @@
     },
     {
         "id":"poisonland_rubiano8",
-        "message":"You are right, $playername. He is an adventurer, and adventurers have their pride. We shouldn't be quick to judge him. Rather, we should pray that the Shadow watches over him. You've done a good job.",
+        "message":"You are right, $playername. He is an adventurer, and adventurers have their pride. We shouldn't be quick to judge him. Rather, we should pray that the Shadow watches over him. You've done well.",
         "replies":[
             {
                 "text":"May the Shadow watch over him.",
@@ -11834,7 +11899,7 @@
                     },
                     {
                         "requireType":"inventoryKeep",
-                        "requireID":"poisonland_milk",
+                        "requireID":"milk",
                         "value":2,
                         "negate":false
                     }
@@ -11905,7 +11970,7 @@
         "switchToNPC":"brightportstudent2",
         "replies":[
             {
-                "text":"uh, thanks.",
+                "text":"Uh, thanks.",
                 "nextPhraseID":"poisonland_dough4"
             }
         ],
@@ -12748,7 +12813,7 @@
     },
     {
         "id":"poisonland_dough_ingredient3",
-        "message":"You cut the final ingredient for the pie.",
+        "message":"You add the final ingredient for the pie.",
         "replies":[
             {
                 "text":"N",
@@ -12765,7 +12830,7 @@
     },
     {
         "id":"poisonland_dough_ingredient2",
-        "message":"You cut the second ingredient.",
+        "message":"You add the second ingredient.",
         "replies":[
             {
                 "text":"N",
@@ -12782,7 +12847,7 @@
     },
     {
         "id":"poisonland_dough_ingredient1",
-        "message":"You cut the first ingredient.",
+        "message":"You add the first ingredient.",
         "replies":[
             {
                 "text":"N",
@@ -12800,6 +12865,29 @@
     {
         "id":"poisonland_dough_reward",
         "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough_reward1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":3
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":2,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            },
             {
                 "text":"N",
                 "nextPhraseID":"poisonland_dough_reward1",
@@ -14763,7 +14851,7 @@
     },
     {
         "id":"poisonland_hortensia5",
-        "message":"Just one? [Hortensia looks around] \"The classroom seems no different from after I cleaned it. You two didn't make a mess, at the very least.",
+        "message":"Just one? [Hortensia looks around] The classroom seems no different from after I cleaned it. You two didn't make a mess, at the very least.",
         "switchToNPC":"poisonland_hortensia",
         "replies":[
             {
@@ -15493,7 +15581,7 @@
     },
     {
         "id":"poisonland_rubiano13",
-        "message":"It's called 'chocolate,' an exotic ingredient procured by a merchant in Nor City from some distant islands. It used to be quite popular in Brightport before trade across the sea stopped and the merchant went out of business. Sell it, and that will be my payment.",
+        "message":"It's called 'chocolate,' an exotic ingredient procured by a merchant in Nor City, from some distant islands. It used to be quite popular in Brightport before trade across the sea stopped and the merchant went out of business. It'll fetch a high price if you sell it.",
         "replies":[
             {
                 "text":"Hmm, I could bake something with this...",
@@ -15517,7 +15605,7 @@
         "message":"You examine what looks to be an altar.",
         "replies":[
             {
-                "text":"Doesn't seem helpful.",
+                "text":"Doesn't seem useful.",
                 "nextPhraseID":"X"
             }
         ]
@@ -15642,7 +15730,7 @@
         "switchToNPC":"brightportstudent2",
         "replies":[
             {
-                "text":"I didn't know that counts as talent.",
+                "text":"Huh, I didn't know that counts as talent.",
                 "nextPhraseID":"X"
             }
         ]
@@ -15733,6 +15821,49 @@
             {
                 "text":"I didn't want to bake eitherway.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_altar_oegyth",
+        "message":"On second thought, maybe I shouldn't use a valuable crystal here.",
+        "replies":[
+            {
+                "text":"It's a calculated decision.",
+                "nextPhraseID":"poisonland_altar_oegyth1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"oegyth",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Right, its value is too great to use blindly.",
+                "nextPhraseID":"poisonland_altar1"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_altar_oegyth1",
+        "message":"The crystal burns. The flame great enough to envelop the whole altar... Once it subsides the crystal is gone.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_fireperson_warmthgem"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"poisonland_gem",
+                "value":100
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":14
             }
         ]
     }
