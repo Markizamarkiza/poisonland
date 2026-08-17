@@ -504,8 +504,48 @@
         "showInLog":1,
         "stages":[
             {
+                "progress":5,
+                "logText":"While exploring the Charwood Hills I discovered a cave. Further inside I encountered a group of goblins."
+            },
+            {
+                "progress":10,
+                "logText":"Before the goblins could spew their vile words I moved to slay them."
+            },
+            {
+                "progress":15,
+                "logText":"The goblins offered little resistance. I made quick work of them."
+            },
+            {
+                "progress":20,
+                "logText":"While further exploring the Charwood Hills I attempted to cross a shoddy bridge but fell into the stream below. When I regained consciousness I found myself beside the stream deep within a cave."
+            },
+            {
+                "progress":25,
+                "logText":"Deeper within the cave I encountered a group of goblins."
+            },
+            {
+                "progress":30,
+                "logText":"Deeper within the cave I encountered Dak and his group. One of them had pulled me from the water while I was unconscious."
+            },
+            {
+                "progress":35,
+                "logText":"Speaking to Dak I learnt that the goblins terrorizing the settlement of Charwood once lived peacefully in the caves before Thukuzun, a draconic lich, gave his powers to a group of shamans who used them to control the rest and force them to serve Thukuzun."
+            },
+            {
+                "progress":40,
+                "logText":"The goblin king Dartax draws his power from these shamans. If I find and slay the shamans before confronting Dartax I should have a much easier battle against him."
+            },
+            {
+                "progress":45,
+                "logText":"A goblin named Oublig in the friendly goblin camp gave me some advice. The bridge leading toward Charwood is unstable. I should proceed carefully and avoid stepping on the cracks."
+            },
+            {
+                "progress":50,
+                "logText":"I defeated the goblin king and his shamans. Once I stepped outside a horn rang and the goblins of Charwood hastily scattered in every direction. I should tell Maevalia what happened."
+            },
+            {
                 "progress":100,
-                "logText":"I ended the goblin terrorization of the Charwood hills forever.",
+                "logText":"I ended the goblin terrorization of the Charwood Hills forever. Maevalia and the rest of the former inhabitants were overjoyed and will move to reclaim the settlement.",
                 "finishesQuest":1
             }
         ]

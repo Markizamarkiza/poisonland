@@ -80,7 +80,8 @@
     {
         "id":"poisonland_shaman",
         "name":"Charwood goblin shaman",
-        "iconID":"monsters_newb_1:93"
+        "iconID":"monsters_newb_1:93",
+        "unique":1
     },
     {
         "id":"poisonland_hobgoblin",
@@ -122,22 +123,26 @@
     {
         "id":"poisonland_goblinking0",
         "name":"Goblin leader",
-        "iconID":"monsters_fatboy73:22"
+        "iconID":"monsters_fatboy73:22",
+        "unique":1
     },
     {
         "id":"poisonland_goblinking1",
         "name":"Goblin leader",
-        "iconID":"monsters_fatboy73:22"
+        "iconID":"monsters_fatboy73:22",
+        "unique":1
     },
     {
         "id":"poisonland_goblinking2",
         "name":"Goblin leader",
-        "iconID":"monsters_fatboy73:22"
+        "iconID":"monsters_fatboy73:22",
+        "unique":1
     },
     {
         "id":"poisonland_goblinking3",
         "name":"Goblin leader",
-        "iconID":"monsters_fatboy73:22"
+        "iconID":"monsters_fatboy73:22",
+        "unique":1
     },
     {
         "id":"poisonland_wildmazarth",

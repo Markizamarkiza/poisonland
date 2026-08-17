@@ -7822,16 +7822,6 @@
         ],
         "rewards":[
             {
-                "rewardType":"removeQuestProgress",
-                "rewardID":"poisonland_baking",
-                "value":14
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"poisonland_baking",
-                "value":15
-            },
-            {
                 "rewardType":"alignmentSet",
                 "rewardID":"poisonland_fuel",
                 "value":0
@@ -8518,7 +8508,7 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_oven6_0",
+                "nextPhraseID":"poisonland_oven6_2",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -15864,6 +15854,27 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_nondisplay",
                 "value":14
+            }
+        ]
+    },
+    {
+        "id":"poisonland_oven6_2",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_oven6_0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":14
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":15
             }
         ]
     }
