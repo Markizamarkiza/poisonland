@@ -122,25 +122,25 @@
     },
     {
         "id":"poisonland_goblinking0",
-        "name":"Goblin leader",
+        "name":"Clanboss Dartax",
         "iconID":"monsters_fatboy73:22",
         "unique":1
     },
     {
         "id":"poisonland_goblinking1",
-        "name":"Goblin leader",
+        "name":"Clanboss Dartax",
         "iconID":"monsters_fatboy73:22",
         "unique":1
     },
     {
         "id":"poisonland_goblinking2",
-        "name":"Goblin leader",
+        "name":"Clanboss Dartax",
         "iconID":"monsters_fatboy73:22",
         "unique":1
     },
     {
         "id":"poisonland_goblinking3",
-        "name":"Goblin leader",
+        "name":"Clanboss Dartax",
         "iconID":"monsters_fatboy73:22",
         "unique":1
     },
@@ -173,5 +173,36 @@
         "id":"poisonland_crystalberrygather",
         "name":"Crystal berry",
         "iconID":"items_newb:817"
+    },
+    {
+        "id":"poisonland_oublig",
+        "name":"Oublig",
+        "iconID":"monsters_rltiles4:16"
+    },
+    {
+        "id":"poisonland_dak",
+        "name":"Dak",
+        "iconID":"monsters_rltiles4:22",
+        "horizontalFlipChance":100
+    },
+    {
+        "id":"poisonland_retep",
+        "name":"Retep",
+        "iconID":"monsters_rltiles4:18"
+    },
+    {
+        "id":"poisonland_goblin",
+        "name":"Goblin warrior",
+        "iconID":"monsters_rltiles4:21"
+    },
+    {
+        "id":"poisonland_goblin1",
+        "name":"Puny goblin",
+        "iconID":"monsters_rltiles4:17"
+    },
+    {
+        "id":"poisonland_goblin2",
+        "name":"Charwood goblin",
+        "iconID":"monsters_rltiles4:18"
     }
 ]

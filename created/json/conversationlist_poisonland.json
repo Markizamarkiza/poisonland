@@ -4274,7 +4274,7 @@
     },
     {
         "id":"poisonland_lecture18",
-        "message":"The Easterners summoned a horde of monsters to attack the Feygardians after they had barely recovered from that dirty ambush. It was a slaughter, not a battle. And to this day, none of the cultists responsible were held accountable for this crime! As unbelievable as it sounds, this is our history.",
+        "message":"The Easterners summoned a horde of monsters to attack the Feygardians after they had barely recovered from the dirty tricks they were subjected to. It was a slaughter, not a battle. And to this day, none of the cultists responsible were held accountable for this crime! As unbelievable as it sounds, this is our history.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -5542,10 +5542,76 @@
         ]
     },
     {
-        "id":"poisonland_dinan"
+        "id":"poisonland_dinan",
+        "message":"Hi kid. Go ahead and order. I'm waiting for mine.",
+        "replies":[
+            {
+                "text":"Why would you be waiting? They sell the pastries up front.",
+                "nextPhraseID":"poisonland_dinan1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":62
+                    }
+                ]
+            },
+            {
+                "text":"Is Eiden with you?",
+                "nextPhraseID":"poisonland_dinan2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":6
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Shouldn't you be returning to the academy instead of sitting around here?",
+                "nextPhraseID":"poisonland_dinan3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":110
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id":"poisonland_erina"
+        "id":"poisonland_erina",
+        "message":"Hello. Bustling day at the bakery, isn't it?",
+        "replies":[
+            {
+                "text":"Is Eiden with you?",
+                "nextPhraseID":"poisonland_erina1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":6
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Sure is.",
+                "nextPhraseID":"X"
+            }
+        ]
     },
     {
         "id":"poisonland_freyja",
@@ -6399,7 +6465,7 @@
     },
     {
         "id":"poisonland_agnese1",
-        "message":"Ysolde has a habit of getting carried away. She gets so focused that she forgets everything else around her. Being her friend means having to help her slow down sometimes, now she's roped you in too.",
+        "message":"Ysolde gets so focused that she forgets everything else around her. Being her friend means having to help her slow down sometimes, now she's roped you in too.",
         "replies":[
             {
                 "text":"Maybe, I'll keep that in mind.",
@@ -6681,7 +6747,7 @@
     },
     {
         "id":"poisonland_ysolde20",
-        "message":"I'll go ahead and prepare the dough. I need you to return to Jalmor and buy some firewood so we can start the oven.",
+        "message":"I'll go ahead and prepare the dough. I need you to return to Jalmor and buy some firewood so we can heat the oven.",
         "replies":[
             {
                 "text":"Easy as pie.",
@@ -7303,11 +7369,6 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
                         "value":10
-                    },
-                    {
-                        "requireType":"factionScore",
-                        "requireID":"poisonland_fuel",
-                        "value":1
                     }
                 ]
             },
@@ -7434,13 +7495,18 @@
     },
     {
         "id":"poisonland_oven1",
-        "message":"The fireplace is empty.",
+        "message":"The sooty fireplace stands undisturbed.",
         "switchToNPC":"none",
         "replies":[
             {
                 "text":"[Start the fire using two small sticks and a handful of hay.]",
                 "nextPhraseID":"poisonland_oven1_0",
                 "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":55
+                    },
                     {
                         "requireType":"inventoryRemove",
                         "requireID":"small_tree_branch",
@@ -8623,6 +8689,7 @@
                 ]
             },
             {
+                "text":"N",
                 "nextPhraseID":"poisonland_pastryadd"
             }
         ]
@@ -8645,6 +8712,17 @@
         "id":"poisonland_pastryadd",
         "message":"...",
         "replies":[
+            {
+                "text":"[Place the rolls into the oven.]",
+                "nextPhraseID":"poisonland_addrolls1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawroll0",
+                        "value":1
+                    }
+                ]
+            },
             {
                 "text":"[Place the rolls into the oven.]",
                 "nextPhraseID":"poisonland_addrolls1",
@@ -11253,6 +11331,11 @@
                         "negate":true
                     }
                 ]
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":48
             }
         ]
     },
@@ -11733,7 +11816,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"I didn't meant it literally...",
+                "text":"I didn't mean it quite literally...",
                 "nextPhraseID":"X"
             }
         ]
@@ -12604,6 +12687,90 @@
                         "value":1
                     }
                 ]
+            },
+            {
+                "text":"I don't have any suitable ingredients right now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"carrot",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"apple_red",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"apple_green",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"pear",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"fig_fruit",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"deebo_apples",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"strawberry",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry1a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry2",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry2a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry3a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry3",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             }
         ],
         "rewards":[
@@ -12667,7 +12834,7 @@
             },
             {
                 "rewardType":"giveItem",
-                "rewardID":"poisonland_rawroll1",
+                "rewardID":"poisonland_rawroll0",
                 "value":1
             },
             {
@@ -13200,6 +13367,90 @@
                         "value":1
                     }
                 ]
+            },
+            {
+                "text":"I don't have any suitable ingredients right now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"carrot",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"apple_red",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"apple_green",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"pear",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"fig_fruit",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"deebo_apples",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"strawberry",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry1a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry2",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry2a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry3a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry3",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             }
         ],
         "rewards":[
@@ -13440,6 +13691,90 @@
                         "requireType":"inventoryRemove",
                         "requireID":"#poisonland_berry2",
                         "value":1
+                    }
+                ]
+            },
+            {
+                "text":"I don't have any suitable ingredients right now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"carrot",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"apple_red",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"apple_green",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"pear",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"fig_fruit",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"deebo_apples",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"strawberry",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry1a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry2",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry2a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry3a",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"wild_berry3",
+                        "value":1,
+                        "negate":true
                     }
                 ]
             }
@@ -15875,6 +16210,44 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_baking",
                 "value":15
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dinan1",
+        "message":"Heh, of course you wouldn't know about the secret menu."
+    },
+    {
+        "id":"poisonland_dinan2",
+        "message":"No, he's not with us. You could ask my friend Erina over there. I wasn't paying attention to where he went when we left."
+    },
+    {
+        "id":"poisonland_dinan3",
+        "message":"No? We have a break until evening. There's nothing especially in need of my presence.",
+        "replies":[
+            {
+                "text":"What about Ysolde.",
+                "nextPhraseID":"poisonland_dinan4"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dinan4",
+        "message":"She shuts herself in her room too often. I gave her a piece of cake to cheer up the other day, and she hasn't talked to me since.",
+        "replies":[
+            {
+                "text":"Oh, I guess that's how things are.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_erina1",
+        "message":"Eiden? No, we parted ways outside the academy. He went the other way we did.",
+        "replies":[
+            {
+                "text":"I see, I'll search for him in the west of town then.",
+                "nextPhraseID":"X"
             }
         ]
     }

@@ -1222,5 +1222,45 @@
                 "rewardID":"brightport_class"
             }
         ]
+    },
+    {
+        "id":"brightport_citizen0",
+        "message":"Excuse me, I have no time for discussion.",
+        "switchToNPC":"brightportcitizen",
+        "replies":[
+            {
+                "text":"Neither do I.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"How boorish.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"brightport_bakery",
+        "message":"Hello, and welcome to the world famous bakery of Brightport, how may I help you?",
+        "switchToNPC":"brightportbakery2",
+        "replies":[
+            {
+                "text":"Please show me the menu.",
+                "nextPhraseID":"S"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":62
+            }
+        ]
     }
 ]

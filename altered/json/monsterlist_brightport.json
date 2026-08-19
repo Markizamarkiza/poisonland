@@ -132,5 +132,11 @@
         "iconID":"monsters_ld_edit:3",
         "unique":1,
         "phraseID":"poisonland_hortensia_selector2"
+    },
+    {
+        "id":"brightportinn",
+        "name":"Elinalise",
+        "iconID":"monsters_ld1:220",
+        "phraseID":"brightport_inn"
     }
 ]

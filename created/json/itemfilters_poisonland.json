@@ -1,12 +1,5 @@
 [
   {
-    "id": "gael_meat",
-    "include": [
-      "meat",
-      "meat2"
-    ]
-  },
-  {
     "id": "poisonland_berry1",
     "include": [
       "wild_berry1",

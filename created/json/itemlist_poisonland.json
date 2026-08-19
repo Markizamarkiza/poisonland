@@ -1159,5 +1159,13 @@
                 }
             ]
         }
+    },
+    {
+        "id":"poisonland_rawroll0",
+        "iconID":"items_johny_baking:0",
+        "name":"Unbaked rolls",
+        "displaytype":"quest",
+        "category":"other",
+        "description":"A raw pastry, filled with simple ingredients."
     }
 ]

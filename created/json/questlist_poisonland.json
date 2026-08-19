@@ -383,6 +383,10 @@
                 "progress":61,
                 "logText":"offered roll to agnese",
                 "rewardExperience":5000
+            },
+            {
+                "progress":62,
+                "logText":"bakery inventory checked"
             }
         ]
     },
