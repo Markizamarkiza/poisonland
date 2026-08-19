@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map SYSTEM "https://mapeditor.org/dtd/1.0/map.dtd">
 <map version="1.0" orientation="orthogonal" width="17" height="15" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="outdoors" value="1"/>
+ </properties>
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="320"/>
  </tileset>
@@ -225,8 +228,13 @@
     <property name="place" value="east"/>
    </properties>
   </object>
+  <object name="chk_wild_berry" type="script" x="512" y="256" width="32" height="128">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn">
   <object name="elderdeer" type="spawn" x="64" y="224" width="64" height="128">
    <properties>
     <property name="spawngroup" value="brightport_elderdeer"/>
@@ -252,6 +260,12 @@
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="brightport_squirrel2"/>
+   </properties>
+  </object>
+  <object name="wild_berry1" type="spawn" x="64" y="96" width="448" height="96">
+   <properties>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="wild_berry3"/>
    </properties>
   </object>
  </objectgroup>

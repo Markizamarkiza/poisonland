@@ -214,7 +214,7 @@
    eJztlLsRwCAMQ5ki+6/ERqnScLL07DQp4jsaQB+EYV9r7X98bjw1xVZ81ZrDJo2zyBmqIloOf3K5/c6nW088aT5pOYzCEj2lQXMkRXpM7Us+ux5oj1RZ0l5RWOrP5dK5w878mzxTP06K/Ev07VD+CY/iS39ixxPNgWSjeG757uxr
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
+ <objectgroup name="Mapevents">
   <object name="south" type="mapchange" x="64" y="544" width="192" height="32">
    <properties>
     <property name="map" value="waytobrightport13"/>
@@ -233,8 +233,13 @@
     <property name="place" value="north1"/>
    </properties>
   </object>
+  <object name="chk_wild_berry" type="script" x="64" y="544" width="736" height="32">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
+ <objectgroup name="Spawn">
   <object name="brightport_fawn" type="spawn" x="64" y="416" width="256" height="96">
    <properties>
     <property name="quantity" value="2"/>
@@ -274,6 +279,17 @@
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="brightport_squirrel"/>
+   </properties>
+  </object>
+  <object name="wild_berry1" type="spawn" x="128" y="160" width="320" height="96">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wild_berry3"/>
+   </properties>
+  </object>
+  <object name="wild_berry2" type="spawn" x="448" y="256" width="128" height="192">
+   <properties>
+    <property name="spawngroup" value="wild_berry3"/>
    </properties>
   </object>
  </objectgroup>

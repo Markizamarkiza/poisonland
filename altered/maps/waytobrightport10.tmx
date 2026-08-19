@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map SYSTEM "https://mapeditor.org/dtd/1.0/map.dtd">
-<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="30" height="8" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="320"/>
  </tileset>
@@ -181,90 +181,108 @@
  <tileset firstgid="7481" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7609" name="map_tree_3" tilewidth="32" tileheight="32">
-  <image source="../drawable/map_tree_3.png" width="1024" height="544"/>
+ <tileset firstgid="7609" name="map_pillar_3" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_pillar_3.png" width="512" height="320"/>
  </tileset>
- <layer name="Ground" width="20" height="15">
+ <layer name="Base" width="30" height="8">
   <data encoding="base64" compression="zlib">
-   eJy7yMnAcHEUk4X5pAanWbQ0cxSPYhDuQktbuNIaL5XTIACzPfvI
+   eJxjYBhZ4CInfkysGaSIU8tecsBIs3ekAQBFkhz1
   </data>
  </layer>
- <layer name="Objects" width="20" height="15">
+ <layer name="Ground" width="30" height="8">
   <data encoding="base64" compression="zlib">
-   eJx9VDtOAzEQdQUoBBS7i6XsngCuxAGggoZUKShI+NwAIUTH50LQgUQSI4HoQAgQ81iPPJ54edLIzvj5zW+d0Dem641Z82m9Ibsle6azIM4nZEdkr8K36tIe2HTNKn28D4VYvI7rnMur3AOnUf/dtsdh9CL3bmDM/SDnHJOdkH33G/9lZUyH+KN6UWfJmQwvtuEAO4Va5F1gbvN8gGDTGWv9FPoD7Lmyf5/8Q6V5KPr452vRBLgHjDFpTci2fV4Xo1uodUZ9ncfezmziXlT5PXC5VuzRC/Txv/w0VtQcNB/6XI88CyKvA6UhZ/JhTRGsdUV27RfvjeoUXwO+XcHVWvx72eV3ZM7Q76i8gfOq/dtnnBHnM2rx+wXwrYH/RLObxvltqLfcUzG5Tuh8qblJzbcYb4tiD33zZqeintK8S/8L66KeB8rxkewX+VdRuA==
+   eJx7wMTAcA4NP0DCD4H4MxBf5MSP70PVnyNCLQh/YkLogdnzCQkTYycIf2RCNYuQehZmhB6YPSAxGCbGThZxTLOIdS/MnsucEPxLjIFBUpw4vdjMIkadGND832IIO7OJdCs1MMhuCSRML3tHCgYAWinCyQ==
   </data>
  </layer>
- <layer name="Above" width="20" height="15">
+ <layer name="Objects" width="30" height="8">
   <data encoding="base64" compression="zlib">
-   eJyNUssNwjAM9QBwgkst1T3AHgwCUo+wAm35bgEIIcaAG0h8VmAXkHBVIjmpE/qkKE6cPNvPBqjwjgA+kd9290mi+6WtwRdH4hQDnGP7TY4ABVZ3KwJYU2WnSTieG3eEds7lOlL4b5MazN5C/d6HcWKfX4rWBlIDiSHadWm5mv3Buj5j+82C619S/Y9r/8vP4NCQq0SBfp+GUt+20CBU84bfbRW90qR+94/fcDXJU+OfsSZzCmuRs78Q2k05Xuboc+Pe3Xntyc9jsCObR/ZN+zsgncvtd4e5uhiegQvneP3NWab0QM5Rj/19rMfR5voL8d2OgQ==
+   eJx9U81qAjEQHrJUUWoxOXSJID32bqVX+wZ9iPZW8eJTtG+i7+MTCLqLP0cR6cEJSZgvcXFgmGTnm2/+skREjwOiHuu7Ivo01Cj/luhoBYvnokix62fxRfvGOob7PflS3j4Ugp9wXR/mljfPTdBPpYleOOaHz1PWvU1xr0p6czJXPqeTrfbxTmqb8q6GPu9IpXzHDFcFDhe/02mt2Ntep3NpmlEF9XSMcDmeogw8YSc5Rz6zGddd8Y5qLfxdI3ny+F+2fwPxxZm0jLfYbw019APnSQvWlqkvSry34fsG8mE9W5jXgnXJ+sRxB+176hqZeT/rq2m+Z/DFHSL+Aud2wxv8Djs86VvuOntzyIv3nBN5HCbWgP+ds1cLn0Rx
   </data>
  </layer>
- <layer name="Top" width="20" height="15">
+ <layer name="Above" width="30" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFfyUH2gWjYBRQH8TLD7QLqA8AadQBlQ==
+   eJxjYCAMPosxMDwG4r+SCLE/khA+jEYGe5lQ1cBAtBQDQwwQ30FTDwMgO9D5n5DEbkqimntUFsLPZUKoWQ1k30NTh64fm71/kfTA7MTmN2RQy4TKh6m/I4k9fNDFPolhmokOkPVXAsOuSgohZ8sE8ROPFISGqeVF4mMDuMKBGIAeJjD+TKCds6Qw1eOzC1/43iPCjejhGSKFKUeMO/CZicuN99DU4NOHzL6HxUxcetFpZL0w/wAAMC9uFQ==
   </data>
  </layer>
- <layer name="Walkable" width="20" height="15" visible="0">
+ <layer name="Top" width="30" height="8">
   <data encoding="base64" compression="zlib">
-   eJy7KMbAcJECDAKUyJNjFjLAphcdkGs/LkCsWcQCYswhJiyQxUgxk5B7SHEnNnNxxRE5YUcovimJB3xux2cmKfaQ62d85mBzNz6/YHMHNjNxuYPYtE8ofZCSj2B8AJF9ntE=
+   eJxjYBgF6OCv5EC7YBSMAuIAAOqNARc=
+  </data>
+ </layer>
+ <layer name="Walkable" width="30" height="8" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJy7KMbAcHEUo2B0ABNDlqel3bjcge4mUs0jxlx083G5h1A44DKTXIBuLiF7CbmDEjeSEnekhjcxaREZAwD7Ior3
   </data>
  </layer>
  <objectgroup name="Mapevents">
-  <object name="east" type="mapchange" x="608" y="256" width="32" height="160">
+  <object name="south" type="mapchange" x="416" y="224" width="64" height="32">
    <properties>
-    <property name="map" value="brightportwild8"/>
-    <property name="place" value="west"/>
-   </properties>
-  </object>
-  <object name="south" type="mapchange" x="64" y="448" width="96" height="32">
-   <properties>
-    <property name="map" value="brightportwild3"/>
+    <property name="map" value="waytobrightport9"/>
     <property name="place" value="north"/>
    </properties>
   </object>
-  <object name="poisonland_check_crystalberry" type="script" x="0" y="0" width="640" height="480">
+  <object name="west" type="mapchange" x="0" y="128" width="32" height="96">
    <properties>
-    <property name="when" value="step"/>
+    <property name="map" value="waytobrightport2"/>
+    <property name="place" value="east"/>
+   </properties>
+  </object>
+  <object name="brightport_goblintrap2_1" type="script" x="160" y="128" width="32" height="32">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
+  <object name="chk_wild_berry" type="script" x="416" y="224" width="64" height="32">
+   <properties>
+    <property name="when" value="enter"/>
    </properties>
   </object>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="rashsquirmer" type="spawn" x="128" y="64" width="448" height="352">
+  <object name="brightport_squirrel1" type="spawn" x="512" y="96" width="288" height="128">
    <properties>
-    <property name="quantity" value="4"/>
     <property name="spawngroup" value="brightport_squirrel"/>
    </properties>
   </object>
-  <object name="brightport_elderdeer" type="spawn" x="352" y="256" width="192" height="128">
+  <object name="brightport_squirrel" type="spawn" x="64" y="64" width="416" height="128">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="brightport_squirrel"/>
+   </properties>
+  </object>
+  <object name="elderdeer" type="spawn" x="416" y="96" width="160" height="96">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="brightport_elderdeer"/>
    </properties>
   </object>
-  <object name="brightport_elderdeer2" type="spawn" x="128" y="288" width="192" height="128">
+  <object name="elderdeer2" type="spawn" x="160" y="128" width="160" height="96">
+   <properties>
+    <property name="spawngroup" value="brightport_elderdeer"/>
+   </properties>
+  </object>
+  <object name="goblin" type="spawn" x="96" y="160" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="brightport_goblin2"/>
+   </properties>
+  </object>
+  <object name="wild_berry1" type="spawn" x="608" y="128" width="224" height="128">
    <properties>
     <property name="quantity" value="2"/>
-    <property name="spawngroup" value="brightport_elderdeer"/>
-   </properties>
-  </object>
-  <object name="brightport_elderdeer33" type="spawn" x="288" y="64" width="192" height="128">
-   <properties>
-    <property name="spawngroup" value="brightport_elderdeer"/>
-   </properties>
-  </object>
-  <object name="crystal_berry1" type="spawn" x="192" y="96" width="352" height="128">
-   <properties>
-    <property name="active" value="false"/>
-    <property name="spawngroup" value="poisonland_crystalberrygather"/>
-   </properties>
-  </object>
-  <object name="crystal_berry2" type="spawn" x="256" y="352" width="160" height="64">
-   <properties>
-    <property name="active" value="false"/>
-    <property name="spawngroup" value="poisonland_crystalberrygather"/>
+    <property name="spawngroup" value="wild_berry3"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys"/>
+ <objectgroup name="Keys" visible="0">
+  <object name="stanwick_quest" type="key" x="544" y="64" width="32" height="32">
+   <properties>
+    <property name="phrase" value="brightport_statue_sw"/>
+    <property name="requireId" value="andor"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup name="Replace"/>
 </map>

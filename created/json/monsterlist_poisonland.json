@@ -172,7 +172,8 @@
     {
         "id":"poisonland_crystalberrygather",
         "name":"Crystal berry",
-        "iconID":"items_newb:817"
+        "iconID":"items_newb:817",
+        "phraseID":"poisonland_crystalberry"
     },
     {
         "id":"poisonland_oublig",

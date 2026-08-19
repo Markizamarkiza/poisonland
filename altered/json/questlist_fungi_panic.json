@@ -93,5 +93,52 @@
                 "rewardExperience":1000
             }
         ]
+    },
+    {
+        "id":"fungi_panic_nondisplayed",
+        "name":"Fungi Panic - non displayed",
+        "showInLog":0,
+        "stages":[
+            {
+                "progress":10,
+                "logText":"10=Chains."
+            },
+            {
+                "progress":20,
+                "logText":"20=Algore grave"
+            },
+            {
+                "progress":35,
+                "logText":"35=I opened Bogsten's backyard door."
+            },
+            {
+                "progress":60,
+                "logText":"60=Cave wall open"
+            },
+            {
+                "progress":90,
+                "logText":"90=killed fungi"
+            },
+            {
+                "progress":100,
+                "logText":"100=Granny despawn."
+            },
+            {
+                "progress":110,
+                "logText":"110=Gardener gloves worn"
+            },
+            {
+                "progress":115,
+                "logText":"Berries spawned."
+            },
+            {
+                "progress":200,
+                "logText":"Bogsten's grand grand grandmother invited me to their family tomb."
+            },
+            {
+                "progress":210,
+                "logText":"You found a hidden way downstairs."
+            }
+        ]
     }
 ]
